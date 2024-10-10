@@ -6,10 +6,12 @@
     <meta name="description" content="portfolio website for a full stack developer">
     <meta name="keywords" content="portfolio website">
     <title>Almaha's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/31cc6e66c1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header and nav starts -->
-    <header>
+    <header class="header">
        <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -24,29 +26,39 @@
     <!-- header and nav ends -->
      <main>
      <!-- about starts -->
-    <section id="about">
-        <h1>Hello, Iam Almaha</h1>
-        <p>A full stack web developer. perfectly marries functional requirements and creative elements to produce optimal platforms. Rready to take on challenges using troubleshooting and task prioritization skills to help team succeed</p>
+    <section id="about" class="about">
+        <div class="intro">
+            <h1>Hello, I'm Almaha</h1>
+            <p>A full stack web developer.</p>
+            <p>Perfectly marries functional requirements and creative elements to produce optimal platforms. Rready to take on challenges using troubleshooting and task prioritization skills to help team succeed.</p>
+        </div>
         <img src="./images/almahas portfolio picture2.jpg" alt="almahas portfolio picture" width="250" height="250">
     </section> 
     <!-- about ends -->
      <!-- projects starts -->
     <section id="projects">
-        <h1>Projects:</h1>
-        <div id="projects__backend">
-            <h2>hotel booking management system</h2>
+        <h1 class="subject__style">Projects:</h1>
+        <section class="projects__dispaly">
+        <div>
+            <div>
+            <p class="font-size">Hotel Booking System</p>
             <p>A backend system to deal with hotel reservations. It reserve rooms with specify days and print the total amount and payment method.</p>
             <span>Technology used:</span>
             <ol>
                 <li>C#</li>
                 <li>Asp.Net</li>
             </ol>
-            <a src="https://github.com/almahamans/hotel-booking-management-system" >
-                <img src="./images/backend projects portofolio.png" alt="hotel booking management system picture" height="300" width="350">
+            </div>
+            <div>
+            <p class="projects__display--pic">(Click on the photo to go to repo page...)</p>
+            <a href="https://github.com/almahamans/hotel-booking-management-system" > 
+                <img src="./images/backend projects portofolio.png" alt="hotel booking management system picture" height="200" width="350">
             </a>
+            </div>
         </div>
-        <div id="projects__frontend">
-            <h2>Notes App</h2>
+        <div>
+            <div>
+            <p class="font-size">Notes App</p>
             <p>An app to arrange your thought and tasks through the day. User able to add a note and mark the note eathir completed, uncompleted, uregent and in progress also the user can delete the note.
                 The app available in two modes light and dark.</p>
             <span>Technology used:</span>
@@ -55,12 +67,17 @@
                 <li>Sass</li>
                 <li>Node js</li>
             </ol>
-            <a src="https://github.com/almahamans/notes-app">
-                <img src="./images/frontend projects portofolio.png" alt="notes app picture" height="300" width="350">
+            </div>
+            <div>
+            <p class="projects__display--pic">(Click on the photo to go to repo page...)</p>
+            <a href="https://github.com/almahamans/notes-app">
+                <img src="./images/frontend projects portofolio.png" alt="notes app picture" height="200" width="350">
             </a>
+            </div>
         </div>
-        <div id="projects__api__frontend">
-            <h2>Travel App</h2>
+        <div>
+            <div>
+            <p class="font-size">Travel App</p>
             <p>An app to arrange your thought and tasks through the day. User able to add a note and mark the note eathir completed, uncompleted, uregent and in progress also the user can delete the note.
                 The app available in two modes light and dark.</p>
             <span>Technology used:</span>
@@ -72,75 +89,102 @@
                 <li>Express js</li>
                 <li>Node js</li>
             </ol>
-            <a src="https://github.com/almahamans/travel-app">
-                <img src="./images/frontend api portofolio.png" alt="travel app picture" height="300" width="350">
+            </div>
+            <div>
+            <p class="projects__display--pic">(Click on the photo to go to repo page...)</p>
+            <a href="https://github.com/almahamans/travel-app">
+                <img src="./images/frontend api portofolio.png" alt="travel app picture" height="200" width="350">
             </a>
+            </div>
         </div>
+        </section>
     </section>
     <!-- projects ends -->
      <!-- skills starts -->
     <section id="skills">
-        <h2>Skills:</h2>
-        <p>Frontend skills:</p>
-        <ul>
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-            <li>react js</li>
-            <li>bootstrap</li>
+        <h1 class="subject__style">Skills:</h1>
+        <div class="skills__sec">
+        <div class="skill__div">
+        <span>Frontend skills:</span>
+        <ul class="skills__ul">
+            <li><i class="fa-brands fa-html5" style="color: red;"></i>html</li>
+            <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i>css</li>
+            <li><i class="fa-brands fa-js" style="color: rgb(218, 218, 8);"></i>javaScript</li>
+            <li><i class="fa-brands fa-react" style="color: rgb(67, 183, 211);"></i>react jS</li>
+            <li><i class="fa-brands fa-bootstrap" style="color: purple;"></i>bootstrap</li>
         </ul>
-        <p>Backend skills:</p>
-        <ul>
-            <li>C#</li>
-            <li>asp.net</li>
-            <li>php</li>
-            <li>postgresql</li>
+        </div>     
+        <div class="skill__div">
+        <span>Backend skills:</span>
+        <ul class="skills__ul">
+            <li><i class="fa-solid fa-code" style="color: aqua;"></i>C#</li>
+            <li><i class="fa-solid fa-server" style="color: rgb(64, 104, 157);"></i>asp.net</li>
+            <li><i class="fa-brands fa-php" style="color: rgb(133, 69, 133);"></i>php</li>
+            <li><i class="fa-solid fa-database" style="color: orange;"></i>postgresql</li>
         </ul>
-        <p>Soft skills:</p>
-        <ul>
-            <li>Teamwork</li>
-            <li>problem solving</li>
-            <li>time management</li>
+        </div>
+        <div class="skill__div">
+        <span>Soft skills:</span>
+        <ul class="skills__ul">
+            <li><i class="fa-solid fa-handshake-angle" style="color: rgb(190, 71, 91);"></i>Team work</li>
+            <li><i class="fa-solid fa-bug" style="color: red;"></i>problem solving</li>
+            <li><i class="fa-solid fa-calendar-week" style="color: rgb(41, 41, 209);"></i>time management</li>
         </ul>
+        </div>
+        </div>
     </section>
     <!-- skills ends -->
      <!-- experince starts -->
     <section id="experince">
-        <h2>Experince:</h2>
-        <p>Programmer</p>
-        <p>Sep 2023 – Feb 2024</p>
+        <h1 class="subject__style">Experince:</h1>
+        <div>
+        <span>Programmer</span>
+        <span>Sep 2023 – Feb 2024</span>
         <ul>
             <li>Analyses and designed system in a way make the website easy to use.</li>
             <li>Designed user interface using Figma.</li>
-            <li>Built front-end website using HTML, JavaScript, CSS and bootstrap.</li>
+            <li>Built frontend system using HTML, JavaScript, CSS and bootstrap.</li>
         </ul>
+        </div>
     </section>
     <!-- experince starts -->
     <!-- contact starts -->
     <section id="contact">
-        <article>
-            <p>Contact me:</p>
-            <a href="mailto:AlmahaMansour@outlook.com">Send me an email: AlmahaMansour@outlook.com</a> 
+        <h1 class="subject__style">Contact me:</h1>
+        <div class="contact__info">
+        <div class="contact__media">
+            <p>Send me an email:</p>
+            <a href="mailto:AlmahaMansour@outlook.com"> AlmahaMansour@outlook.com</a> 
             <p>Social media:</p>
-            <a href="http://linkedin.com/in/almaha-altamimi-936264183" target="_blank">LinkedIn</a> 
-            <a href="https://github.com/almahamans" target="_blank">Github</a>  
-        </article>
-        <article id="contact--form">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28988.215328804625!2d46.6812928!3d24.743116800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1728476474781!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="address"></iframe>
-            <h3>Happy to have your messages</h3>
-            <form action="https://formspree.io/f/xanywkbk" method="post">
+            <i class="fa-brands fa-linkedin" style="color: rgb(16, 16, 150);"></i><a href="http://linkedin.com/in/almaha-altamimi-936264183" target="_blank">LinkedIn</a> 
+            <i class="fa-brands fa-github" style="color: black;"></i><a href="https://github.com/almahamans" target="_blank">Github</a>  
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28988.215328804625!2d46.6812928!3d24.743116800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1728476474781!5m2!1sen!2ssa" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="address"></iframe>
+        </div>
+        <hr>
+        <div class="contact__sec">
+            <h3>Pleasure to have your messages</h3>
+            <form action="https://formspree.io/f/xanywkbk" method="post" class="contact__form">
+                <div>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="contact-form__name" placeholder="Enter your name please">
+                </div>
+                <div>
                 <label for="name">Email:</label>
                 <input type="email" name="email" id="contact-form__email" placeholder="Enter your email please">
+                </div>
+                <div>
                 <label for="message">Message:</label>
-                <textarea name="message" id="contact-form__message"></textarea>
-                <button id="contact-form__btn__send" type="submit">Send</button>
-                <button id="contact-form__btn__reset" type="reset">Reset</button>
+                <textarea name="message" id="contact-form__message" cols="60" rows="20"></textarea>
+                </div>
+                <div>
+                <button id="contact__form--btn-send" type="submit">Send</button>
+                <button id="contact__form--btn-reset" type="reset">Reset</button>
+                </div>
             </form>
-        </article>
+        </div>
     </section>
     <!-- contact ends -->
-     </main>
+    </main>
 </body>
 </html>
