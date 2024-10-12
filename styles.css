@@ -72,7 +72,7 @@
     color: rgb(229, 86, 110);
 }
 .projects__dispaly > div{
-    width: 70%;
+    width: 80%;
     display: flex;
     gap: 3rem;
 }
@@ -200,9 +200,26 @@ hr{
 
 
 
-
-
-
+@media (min-width:551px) and (max-width:720px){
+    .projects__dispaly > div{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    }
+    .skills__sec{
+    display: flex;
+    align-items:first baseline;
+    }
+    .skill__div{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #contact__form--btn-send, #contact__form--btn-reset{
+    cursor: pointer;
+    width: 15%;
+    box-sizing: border-box;
+    }
+}
 
 @media (max-width:550px){
     .about{
@@ -210,7 +227,7 @@ hr{
         flex-wrap: wrap-reverse;
         text-align: center;
     }
-    #projects__dispaly--backend, #projects__dispaly--frontend, #projects__dispaly--api{
+   .projects__dispaly > div{
         display: flex;
         flex-direction: column;
     }
@@ -225,5 +242,10 @@ hr{
         flex-direction: column;
         gap: 4rem;
         align-items: center;
+    }
+    #contact__form--btn-send, #contact__form--btn-reset{
+    cursor: pointer;
+    width: 10%;
+    box-sizing: border-box;
     }
 }
